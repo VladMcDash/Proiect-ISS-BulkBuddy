@@ -1,0 +1,19 @@
+# General
+.env
+.idea/
+.vscode/
+*.log
+*.sqlite
+node_modules/
+
+# Maven
+backend/target/
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+backend/*.iml
+
+# Node/Vite
+frontend/dist/
+frontend/node_modules/
+frontend/.npm/
