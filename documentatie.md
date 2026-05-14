@@ -1,6 +1,3 @@
-Act as an Expert Full-Stack Developer (Java Spring Boot + React Node.js TypeScript). 
-Your task is to generate a fully working, production-ready application called "BulkBuddy" (a Gym Tracker: Meal & Health Tracker).
-
 ### 1. TECH STACK
 - Backend: Java 17+, Spring Boot 3, Spring Data JPA, Spring Security (JWT authentication), PostgreSQL or H2 (in-memory for dev).
 - Frontend: React 18, TypeScript, Node.js (npm), Tailwind CSS (for quick styling), Axios (for API calls).
@@ -73,15 +70,3 @@ Implement the following entities with JPA annotations.
 - UC4: Admin adds workouts to DB.
 - UC5: User selects a workout they did today (updates burned calories).
 - UC6: Notify user upon completing calorie/protein goals.
-
-### 5. EXECUTION PLAN (IMPORTANT)
-To avoid output limits, please generate the application in **PHASES**. 
-Right now, ONLY execute **PHASE 1**. When I reply with "Continue", execute the next phase.
-
-* **PHASE 1 (Backend Domain & Repositories):** Write the Spring Boot configurations (`application.properties` for H2), the Entities (`User`, `Meal`, `Workout`, `DailyLog`, `ConsumedMeal`, `PerformedWorkout`, `Notification`), and their Spring Data JPA Repositories. Include the Enum for `Role`.
-* **PHASE 2 (Backend Services & CSV Initialization):** Write the Service layer containing the business logic (calorie calculations, goal checking, notification generation) and the `CommandLineRunner` or `@PostConstruct` service that reads a mock CSV (or hardcoded list acting as CSV) to populate standard Meals and Workouts if the DB is empty.
-* **PHASE 3 (Backend Controllers & Security):** Write the REST API Controllers (for Admin and User routes) and a basic Spring Security configuration using JWT.
-* **PHASE 4 (Frontend Setup & Types):** Write the React TypeScript Interfaces (matching the backend entities), Axios API service files, and the Authentication Context/State.
-* **PHASE 5 (Frontend UI):** Write the React Components: Login Page, Admin Dashboard (CRUD Meals/Workouts), and User Dashboard (Daily Log, Macro Progress bars, Notification alerts). Use Tailwind CSS classes for styling.
-
-Please start with PHASE 1 now. Provide fully written, production-ready files, without omitting imports.
